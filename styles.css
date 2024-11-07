@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background: linear-gradient(to right, #138322, #138322);
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url('images/header-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+header .logo {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+section {
+  padding: 3rem;
+  margin: 1rem;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #138322;
+  margin-bottom: 1rem;
+}
+
+form label,
+form input {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #138322;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #138322;
+  transform: scale(1.05);
+}
+
+.card {
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
